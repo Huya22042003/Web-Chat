@@ -63,3 +63,15 @@ conrtroller.errRegister = () => {
         }
     })
 }
+
+conrtroller.setting = () => {
+    let dem = 0
+    document.getElementById("setting").addEventListener("click",() => {
+        dem++;
+        if(dem%2==0) {
+            document.querySelector(".setting").style.display="none"
+        } else {
+            document.querySelector(".setting").style.display="block"
+        }
+    })     
+}

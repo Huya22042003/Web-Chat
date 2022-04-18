@@ -36,7 +36,7 @@
     margin: 20px 50px;
     width: 80%;
 }
-input {
+#login_main input {
     padding: 5px 2px;
     color: #000;
     border-radius: 3px;

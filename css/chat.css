@@ -1,6 +1,5 @@
 #main {
     display: flex;
-    height: 745px;
 }
 
 #nav {
@@ -28,12 +27,21 @@
     right: -70px;
     bottom: 0;
     z-index: 999;
+    animation: show .5s ease ;
 }
-#nav li:hover {
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#nav>ul>li:hover {
     background-color: #40ADFF;
 }
 
-#nav li:hover .nav-notifi {
+#nav>ul>li:hover .nav-notifi {
     display: block;
 }
 
@@ -77,6 +85,7 @@
     top: 0;
     width: 300px;
     background-color: #fff;
+    box-shadow: 10px 0 10px #000000d1;
 }
 
 .online-chat_search img {
@@ -111,6 +120,8 @@
 
 .online-mess {
     margin-top: 80px;
+    overflow-y: scroll;
+    height: 664px;
 }
 .peopel-mess {
     display: flex;
@@ -135,4 +146,107 @@
 }
 .peopel-chat p {
     height: 70%;
+}
+
+
+#chat {
+    background-color: antiquewhite;
+    width: 100%;
+}
+header {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    height: 82px;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid #525252;
+    box-shadow: 10px 0 10px #000000d1;
+}
+header img {
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 10px;
+}
+header h3 {
+    color: rgb(21, 17, 17);
+}
+#instruction {
+    color: white;
+    text-align: center;
+    margin-top: 82px;
+    height: 615px;
+    overflow-y: scroll;
+}
+#typeAndSend {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+}
+#instruction img {
+    height: 80px;
+    border-radius: 100%;
+    border: 4px solid white;
+    margin-top: 120px;
+}
+#instruction h3 {
+    margin: 10px 0 5px 0;
+    font-size: 28px;
+}
+.avatar {
+    align-self: flex-end;
+}
+.avatar img {
+    position: fixed;
+    bottom: 68px;
+    height: 40px;
+    border-radius: 100%;
+    border: 3px solid white;
+    margin-left: 20px;
+}
+input {
+    width: 69%;
+}
+
+/* #typeAndSend input {
+	border: none;
+	outline: none;
+	background: #3A3C3E;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	font-size: 20px;
+	color: white;
+	padding-left: 10px;
+} */
+
+#btn_send {
+    width: 100px;
+    height: 50px;
+    background-color: #0091FF;
+    cursor: pointer;
+}
+#btn_send:hover {
+    opacity: .6;
+}
+.setting {
+    position: absolute;
+    background-color: #fff;
+    top: -30px;
+    left: 20px;
+    width: 100px;
+    display: none;
+    z-index: 999;
+}
+.setting> li {
+    list-style: none;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.setting> li:hover {
+    color: red;
 }
