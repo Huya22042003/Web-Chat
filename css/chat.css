@@ -56,7 +56,7 @@
 
 .nav-top_avata {
     border-radius: 50%;
-    background-image: url("https://4kwallpapers.com/images/walls/thumbs/7828.jpg");
+    background-image: url("../images/background_nav.jpg");
     width: 60px;
     height: 60px;
     border: 2px solid #fff;
@@ -182,8 +182,10 @@ header h3 {
     overflow-y: scroll;
 }
 #typeAndSend {
-    position: fixed;
     display: flex;
+    position: fixed;
+    right: 0;
+    padding-left: 370px;
     bottom: 0;
     width: 100%;
 }
@@ -208,11 +210,8 @@ header h3 {
     border: 3px solid white;
     margin-left: 20px;
 }
-input {
-    width: 69%;
-}
 
-/* #typeAndSend input {
+#typeAndSend input {
 	border: none;
 	outline: none;
 	background: #3A3C3E;
@@ -221,10 +220,11 @@ input {
 	font-size: 20px;
 	color: white;
 	padding-left: 10px;
-} */
+    flex: 5;
+}
 
 #btn_send {
-    width: 100px;
+    flex: 1;
     height: 50px;
     background-color: #0091FF;
     cursor: pointer;
