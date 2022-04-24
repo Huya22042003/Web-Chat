@@ -75,3 +75,18 @@ conrtroller.setting = () => {
         }
     })     
 }
+conrtroller.add = () => {
+    let shows = document.querySelectorAll(".add-people")
+    for (const show of shows) {
+        show.addEventListener("click",()=>{
+            document.getElementById("container_add").style.display="flex"
+        })
+    }
+    let hides = document.querySelectorAll(".js-removeAdd")
+    for (const hide of hides) {
+        hide.addEventListener("click",()=> {
+        document.getElementById("container_add").style.display="none"
+        })
+    }
+    
+}

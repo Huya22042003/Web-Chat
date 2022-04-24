@@ -22,6 +22,10 @@ view.setActiveScreen = (screenName) => {
         case "chatScreen" :
             document.getElementById("app").innerHTML = components.chatScreen
             conrtroller.setting()
+            conrtroller.add()
+            document.getElementById("signOut").addEventListener("click",()=> {
+                view.setActiveScreen("loginScreen")
+            })
             break;
     }
 }

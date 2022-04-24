@@ -1,31 +1,19 @@
-#main {
-    display: flex;
-}
 
 #nav {
-    height: 100%;
     background-color: #0091FF;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
     width: 70px;
-    text-align: center;
-    position: fixed;
 }
 
 #nav li {
     position: relative;
+    list-style: none;
+    padding: 0 10px;
 }
 .nav-notifi {
-    position: absolute;
     width: 120%;
     padding: 5px 8px;
-    background-color: #000;
-    color: #fff;
     border: 1px solid #fff;
-    display: none;
     right: -70px;
-    bottom: 0;
     z-index: 999;
     animation: show .5s ease ;
 }
@@ -78,23 +66,17 @@
 }
 
 .online-chat_search {
-    display: flex;
-    justify-content: space-around;
     border: 1px solid #ccc;
-    position: fixed;
-    top: 0;
     width: 300px;
-    background-color: #fff;
     box-shadow: 10px 0 10px #000000d1;
 }
 
 .online-chat_search img {
-    width: 20px;
+    width: 32px;
     height: 20px;
 }
 
 .seacrh-people {
-    display: flex;
     width: 50%;
     background-color:#E8EAEF;
     height: 30px;
@@ -104,18 +86,11 @@
 }
 .seacrh-people img {
     opacity: .5;
-    cursor: pointer;
 }
 .seacrh-people input {
     background-color: #E8EAEF;
-    width: 100%;
-    height: 100%;
     border: none;
     outline: none;
-}
-
-.add-people {
-    cursor: pointer;
 }
 
 .online-mess {
@@ -124,7 +99,6 @@
     height: 664px;
 }
 .peopel-mess {
-    display: flex;
     border: 1px solid #ccc;
     height: 100px;
 }
@@ -133,7 +107,6 @@
     width: 20%;
 }
 .peopel-avata img {
-    width: 100%;
     height: 50%;
     border-radius: 50%;
 }
@@ -150,44 +123,29 @@
 
 
 #chat {
-    background-color: antiquewhite;
     width: 100%;
+    margin-right: -12px;
 }
 header {
-    position: fixed;
-    top: 0;
-    background-color: #fff;
-    display: flex;
-    width: 100%;
     height: 82px;
     padding: 10px;
-    align-items: center;
     border-bottom: 1px solid #525252;
     box-shadow: 10px 0 10px #000000d1;
 }
 header img {
-    height: 100%;
     border-radius: 50%;
     border: 2px solid white;
     margin-right: 10px;
 }
-header h3 {
-    color: rgb(21, 17, 17);
-}
+
 #instruction {
-    color: white;
-    text-align: center;
     margin-top: 82px;
     height: 615px;
     overflow-y: scroll;
 }
 #typeAndSend {
-    display: flex;
-    position: fixed;
-    right: 0;
     padding-left: 370px;
-    bottom: 0;
-    width: 100%;
+    z-index: -1;
 }
 #instruction img {
     height: 80px;
@@ -233,12 +191,9 @@ header h3 {
     opacity: .6;
 }
 .setting {
-    position: absolute;
-    background-color: #fff;
     top: -30px;
     left: 20px;
     width: 100px;
-    display: none;
     z-index: 999;
 }
 .setting> li {
@@ -249,4 +204,38 @@ header h3 {
 }
 .setting> li:hover {
     color: red;
+}
+div#main_add {
+    transform: translate(0px, 0px) rotate3d(1,1,1,0);
+    width: 600px;
+    animation: hien .3s ease;
+}
+#container_add {
+    animation: opa .3s ease;
+}
+@keyframes hien {
+    0% {
+        transform: translate(-293px, -252px) rotate3d(1,1,1,180deg);
+        width: 30%;
+    }
+    100% {
+        transform: translate(0px, 0px) rotate3d(1,1,1,0);
+        width: 600px;
+    }
+}
+@keyframes opa {
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+#main_add img{
+    width: 60px;
+}
+.input {
+    position: relative;
+    top: 20px;
+    left: -20px;
 }

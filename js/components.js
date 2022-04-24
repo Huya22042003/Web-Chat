@@ -86,146 +86,145 @@ components.registerScreen = `
 </div>
 `
 components.chatScreen = `
-<div id="main">
-        <div id="nav">
+<div id="main" class="d-flex">
+        <div id="nav" class="height j-space-bet d-flex j-a-center text-align-cennet posotion-fixe flex-dic">
             <ul id="nav-top">
                 <li class="nav-top_avata">
                 </li>
                 <li><img src="../images/mess.png" alt="">
-                    <span class="nav-notifi">Tin nhắn</span>
+                    <span class="nav-notifi bottom d-none posotion-ab back-ground-black color-white">Tin nhắn</span>
                 </li>
                 <li><img src="../images/phone-book.png"
                         alt="">
-                    <span class="nav-notifi">Danh bạ</span>
+                    <span class="nav-notifi bottom d-none posotion-ab back-ground-black color-white">Danh bạ</span>
                 </li>
                 <li><img src="../images/notifi.png" alt="">
-                    <span class="nav-notifi">Thông báo</span>
+                    <span class="nav-notifi bottom d-none posotion-ab back-ground-black color-white">Thông báo</span>
                 </li>
                 <li><img src="../images/checked.png" alt="">
-                    <span class="nav-notifi">To-DO</span>
+                    <span class="nav-notifi bottom d-none posotion-ab back-ground-black color-white">To-DO</span>
                 </li>
                 <li><img src="../images/video_Call.png" alt="">
-                    <span class="nav-notifi">Zavi</span>
+                    <span class="nav-notifi bottom d-none posotion-ab back-ground-black color-white">Zavi</span>
                 </li>
             </ul>
             <ul id="nav-bottom">
                 <li><img src="../images/Cloud.png" alt="">
-                    <span class="nav-notifi">Cloud của tôi</span>
+                    <span class="nav-notifi bottom d-none posotion-ab back-ground-black color-white">Cloud của tôi</span>
                 </li>
                 <li><img src="../images/star.png"
                         alt="">
-                    <span class="nav-notifi">Đánh dấu</span>
+                    <span class="nav-notifi bottom d-none posotion-ab back-ground-black color-white">Đánh dấu</span>
                 </li>
                 <li id="setting"><img src="../images/setting.png" alt="">
-                    <span class="nav-notifi">Cài đặt</span>
-                    <ul class="setting">
-                        <li>Đăng xuất</li>
-                        <li>Thoát</li>
+                    <span class="nav-notifi bottom d-none posotion-ab back-ground-black color-white">Cài đặt</span>
+                    <ul class="setting d-none back-ground-white color-black posotion-ab">
+                        <li id="signOut">Đăng xuất</li>
+                        <li id="close">Thoát</li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div id="online">
             <div class="online-chat">
-                <div class="online-chat_search">
-                    <div class="seacrh-people">
-                        <img src="../images/search.png" alt="">
-                        <input type="search" placeholder="Tìm kiếm">
+                <div class="online-chat_search d-flex top back-ground-white posotion-fixe j-space-ar">
+                    <div class="seacrh-people d-flex">
+                        <img src="../images/search.png" alt="" class="seacrh-people">
+                        <input type="search" placeholder="Tìm kiếm" class="width height">
                     </div>
-                    <div class="add-people">
-                        <img src="../images/account.png"
-                            alt="">
+                    <div class="add-people cur-po">
+                        <img src="../images/account.png" alt="">
                     </div>
-                    <div class="add-people">
+                    <div class="add-people cur-po">
                         <img src="../images/peopels.png" alt="">
                     </div>
                 </div>
                 <div class="online-mess">
                 
-                    <div class="peopel-mess">
+                    <div class="peopel-mess d-flex">
                         <div class="peopel-avata">
-                            <img src="../images/avata.jpg" alt="">
+                            <img src="../images/avata.jpg" alt="" class="width">
                         </div>
                         <div class="peopel-chat">
                             <h1>Tên người dùng</h1>
                             <p>name: <span>Tin nhắn hiển thị</span></p>
                         </div>
                     </div>
-                    <div class="peopel-mess">
+                    <div class="peopel-mess d-flex">
                         <div class="peopel-avata">
-                            <img src="../images/avata.jpg" alt="">
+                            <img src="../images/avata.jpg" alt="" class="width">
                         </div>
                         <div class="peopel-chat">
                             <h1>Tên người dùng</h1>
                             <p>name: <span>Tin nhắn hiển thị</span></p>
                         </div>
                     </div>
-                    <div class="peopel-mess">
+                    <div class="peopel-mess d-flex">
                         <div class="peopel-avata">
-                            <img src="../images/avata.jpg" alt="">
+                            <img src="../images/avata.jpg" alt="" class="width">
                         </div>
                         <div class="peopel-chat">
                             <h1>Tên người dùng</h1>
                             <p>name: <span>Tin nhắn hiển thị</span></p>
                         </div>
                     </div>
-                    <div class="peopel-mess">
+                    <div class="peopel-mess d-flex">
                         <div class="peopel-avata">
-                            <img src="../images/avata.jpg" alt="">
+                            <img src="../images/avata.jpg" alt="" class="width">
                         </div>
                         <div class="peopel-chat">
                             <h1>Tên người dùng</h1>
                             <p>name: <span>Tin nhắn hiển thị</span></p>
                         </div>
                     </div>
-                    <div class="peopel-mess">
+                    <div class="peopel-mess d-flex">
                         <div class="peopel-avata">
-                            <img src="../images/avata.jpg" alt="">
+                            <img src="../images/avata.jpg" alt="" class="width">
                         </div>
                         <div class="peopel-chat">
                             <h1>Tên người dùng</h1>
                             <p>name: <span>Tin nhắn hiển thị</span></p>
                         </div>
                     </div>
-                    <div class="peopel-mess">
+                    <div class="peopel-mess d-flex">
                         <div class="peopel-avata">
-                            <img src="../images/avata.jpg" alt="">
+                            <img src="../images/avata.jpg" alt="" class="width">
                         </div>
                         <div class="peopel-chat">
                             <h1>Tên người dùng</h1>
                             <p>name: <span>Tin nhắn hiển thị</span></p>
                         </div>
                     </div>
-                    <div class="peopel-mess">
+                    <div class="peopel-mess d-flex">
                         <div class="peopel-avata">
-                            <img src="../images/avata.jpg" alt="">
+                            <img src="../images/avata.jpg" alt="" class="width">
                         </div>
                         <div class="peopel-chat">
                             <h1>Tên người dùng</h1>
                             <p>name: <span>Tin nhắn hiển thị</span></p>
                         </div>
                     </div>
-                    <div class="peopel-mess">
+                    <div class="peopel-mess d-flex">
                         <div class="peopel-avata">
-                            <img src="../images/avata.jpg" alt="">
+                            <img src="../images/avata.jpg" alt="" class="width">
                         </div>
                         <div class="peopel-chat">
                             <h1>Tên người dùng</h1>
                             <p>name: <span>Tin nhắn hiển thị</span></p>
                         </div>
                     </div>
-                    <div class="peopel-mess">
+                    <div class="peopel-mess d-flex">
                         <div class="peopel-avata">
-                            <img src="../images/avata.jpg" alt="">
+                            <img src="../images/avata.jpg" alt="" class="width">
                         </div>
                         <div class="peopel-chat">
                             <h1>Tên người dùng</h1>
                             <p>name: <span>Tin nhắn hiển thị</span></p>
                         </div>
                     </div>
-                    <div class="peopel-mess">
+                    <div class="peopel-mess d-flex">
                         <div class="peopel-avata">
-                            <img src="../images/avata.jpg" alt="">
+                            <img src="../images/avata.jpg" alt="" class="width">
                         </div>
                         <div class="peopel-chat">
                             <h1>Tên người dùng</h1>
@@ -239,19 +238,19 @@ components.chatScreen = `
             <div id="chat-main">
                 <div class="chat-container">
                   <div class="container">
-                    <header>
-                      <img src="../images/baymax.jpg" />
-                      <h3>Message</h3>
+                    <header class="posotion-fixe top width d-flex text-align-cennet back-ground-white">
+                      <img src="../images/baymax.jpg" class="height"/>
+                      <h3 class="color-black">Message</h3>
                     </header>
                     <div id="chatplayground">
-                      <div id="instruction">
+                      <div id="instruction" class="color-white text-align-cennet">
                         <img src="../images/baymax.jpg" />
                       </div>
                       <div id="typing-indicator">
                         <div class="avatar">
                           <img src="../images/baymax.jpg" alt="">
                         </div>
-                        <div id="typeAndSend">
+                        <div id="typeAndSend" class="d-flex posotion-fixe right bottom width">
                           <input type="text" id="typeContent" autocomplete="off" placeholder="Nhập thông tin vào đây...">
                           <button disabled id="btn_send" class="btn">
                             <svg width="24px" height="24px" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -268,7 +267,47 @@ components.chatScreen = `
                   </div>
                 </div>
         </div>
-        
+        <div id="right">
+        </div>
     </div>
-
+    <div id="container_add" style="background-color: rgba(0, 0, 0, 0.3);" class="d-none d-flex margin posotion-ab j-a-center top left right bottom">
+        <div id="main_add" style="height: 500px;" class="d-flex margin back-ground-white j-a-center flex-dic">
+            <div class="top d-flex j-space-bet width">
+                <h1>Tạo nhóm</h1>
+                <span class="cur-po js-removeAdd">X</span>
+            </div>
+            <hr>
+            
+                <div class="add-friend d-flex width" style="margin: 20px;">
+                    <h3>Thêm bạn</h3>
+                    <input type="text" placeholder="Nhập tên" style="width: 70%; margin-left: 20px;">
+                </div>
+                <hr>
+            <div class="talk width" style="overflow-y: scroll;height: 75%;">
+                <div class="d-flex line margin">
+                    <input type="checkbox" name="" id="" class="input border-radiu-50">
+                    <img src="../images/avata.jpg" alt="" class="border-radiu-50">
+                    <p>Ures name</p>
+                </div>
+                <div class="d-flex line margin">
+                    <input type="checkbox" name="" id="" class="input border-radiu-50">
+                    <img src="../images/avata.jpg" alt="" class="border-radiu-50">
+                    <p>Ures name</p>
+                </div>
+                <div class="d-flex line margin">
+                    <input type="checkbox" name="" id="" class="input border-radiu-50">
+                    <img src="../images/avata.jpg" alt="" class="border-radiu-50">
+                    <p>Ures name</p>
+                </div><div class="d-flex line margin">
+                    <input type="checkbox" name="" id="" class="input border-radiu-50">
+                    <img src="../images/avata.jpg" alt="" class="border-radiu-50">
+                    <p>Ures name</p>
+                </div>
+            </div>
+            <div class="width">
+                <button class="btn-full float-right cur-po">Thêm bạn</button>
+                <button class="btn-full float-right cur-po js-removeAdd">Hủy</button>
+            </div>
+        </div>
+    </div>
 `
